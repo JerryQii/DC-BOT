@@ -9,7 +9,9 @@ from src.config import Config
 
 logger = logging.getLogger(__name__)
 
-COGS: list[str] = []
+COGS = [
+    "src.cogs.ping",
+]
 
 
 class DiscordBot(commands.Bot):
